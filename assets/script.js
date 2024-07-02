@@ -1,5 +1,15 @@
 //alert("Welcome to Login Page");
-document.getElementById('nextpage').addEventListener('click',function()
+document.getElementById('formValidity').addEventListener('submit',function(event)
 {
-    window.location.href='pages/Mainpage.html';
+    event.preventDefault();
+    if(this.checkValidity())
+        {
+            window.location.href='pages/Mainpage.html';
+        }
+    else
+    {
+        alert("enter login");
+    }
+    
+    
 });
