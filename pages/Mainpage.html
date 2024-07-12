@@ -22,7 +22,29 @@
                         <input type="text" class="form-control" id="InvoiceData" disabled readonly/>
                     </div>
                 </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th >Description</th>
+                            <th>Quantity</th>
+                            <th>Unit price</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                </table>
+                <button type="button" class="btn btn-success">
+                    Add Item
+                </button>
+                <div class="row mt-5 mb-5">
+                    <div class="form-group col-md-6">
+                        <label for="TotalAmount">Total Amount</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Enter Customer Name : " required/>
+                    <button type="button" class="btn btn-success mt-3">Generate Invoice</button>
+                    </div>
+                </div>
             </form>
+
     </div>
 
 
