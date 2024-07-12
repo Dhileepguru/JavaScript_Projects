@@ -10,6 +10,4 @@ document.getElementById('formValidity').addEventListener('submit',function(event
     {
         alert("enter login");
     }
-    
-    
 });
