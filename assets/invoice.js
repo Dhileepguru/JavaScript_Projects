@@ -42,3 +42,17 @@ let itemCount = 0;
             $(`#itemRow${itemId}`).remove();
             updateTotalAmount();
         }
+        $("document").ready(function(){
+            //automatic invoice date generator
+            const currentDate= new Date();
+            const formattedDate= currentDate.toISOString().slice(0,10);// gives the date in (yyyy-mm-dd) and slice can we the count from 0 to 10 
+            $("#InvoiceDate").val(formattedDate);
+
+            $("#InvoiceDate").submit(function(event){
+                event.preventDefault();
+                updateTotalAmount();
+            });
+       });
+
+       
+        
