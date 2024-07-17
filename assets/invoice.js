@@ -118,17 +118,20 @@ const invoiceContent = `
                                     ).join("")};
                                 </tbody>
                             </table>
+                            <p class="total"> Total amount : ${totalAmount}</p>
 
 
                             </body>
                         </html>
-                            
+                    `;
 
-
-
-
+                    const print=window.open("", "_blank")
+                    printWindow = document.write(invoiceContent);
+                    printWindow.document.close();
+                    printWindow.print();
 
 `
+}
 
 
 
