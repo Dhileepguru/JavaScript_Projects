@@ -164,6 +164,37 @@ function downloadInvoice()
         });
     });
     const totalAmount = $("#TotalAmount").val();
+    //download using jsquery
+    const { jsPDF } =window.jspdf;
+    const doc=new jsPDF();
+    
+    doc.setFontSize(18);
+    doc.text("TAX INVOICE",14,22);
+    doc.setFontSize(12);
+    doc.text(`Bill To: INDIA`, 14, 32);
+    doc.text(`Customer Name: ${CustomerName}`, 14, 42);
+    doc.text(`Date and Time: ${invoiceDate}`, 14, 52);
+
+    const tableColumn = ["Item Description", "Quantity", "Unit price", "SGST", "CGST", "Total"];
+    const tableRows = [];
+
+    items.forEach(item => {
+        const itemData = [
+            item.description,
+            item.Quantity,
+            item.unitPrice,
+            item.SGST,
+            item.CGST,
+            item.totalItemPrice
+        ];
+        tableRows.push(itemData);
+    });
+
+    doc.autoTable(tableColumn, tableRows, { startY: 62 });
+    doc.text(`Total amount: ${totalAmount}`, 14, doc.previousAutoTable.finalY + 10);
+
+    doc.save(` invoice.pdf`);
+
 
 }
 
