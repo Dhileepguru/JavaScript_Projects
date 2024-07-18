@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded'),function(){
             window.location.href='pages/main.html';
         }
         else{
-            alert("Invalid username or password. Please try again." );        }
+            alert("Enter valid Password or Username " )
+        }
     })
 }
