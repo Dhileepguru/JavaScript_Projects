@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        
         <h2 class="mb-5 text-center">Tax Invoice</h2>
         <form id="invoiceform">
             <div class="row mt-5 mb-5">
@@ -21,6 +22,8 @@
                     <input type="text" class="form-control" id="InvoiceDate" disabled readonly/>
                 </div>
             </div>
+            <div class="table-responsive">
+            
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -37,7 +40,8 @@
                 <tbody id="invoiceItem">
                     
                 </tbody>
-            </table>
+            </table> 
+        </div>
             <button type="button" onclick="addInvoiceItem()" class="btn btn-success">
                 Add Item
             </button>
