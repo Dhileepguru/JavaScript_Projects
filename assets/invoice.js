@@ -99,6 +99,32 @@ function printInvoice() {
                     font-weight: bold;
                     margin-top: 20px;
                 }
+                body {
+                    background: url('/JavaScript_Projects/assets/images/Desktop - 1 (4).png') no-repeat center center fixed;
+                    background-size: cover;
+                }
+                .container {
+                    background: rgba(255, 255, 255, 0.9);
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+                h2 {
+                    color: #333;
+                }
+                .form-group label {
+                    font-weight: bold;
+                }
+                .form-control {
+                    border-radius: 5px;
+                }
+                .btn {
+                    border-radius: 5px;
+                }
+                .table th, .table td {
+                    vertical-align: middle;
+                }
+
             </style>
         </head>
         <body>
