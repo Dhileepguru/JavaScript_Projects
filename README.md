@@ -2,6 +2,8 @@
 # Using HTML,CSS JS,JQUERY (Bootstrap for responsive)
 ## Live Demo
 https://taxbilling.netlify.app/
+## Username: Admin
+## Password: adminpassword
 ### Screenshots
 
 #### 1. Login Page
