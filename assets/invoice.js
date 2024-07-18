@@ -100,7 +100,7 @@ function printInvoice() {
                     margin-top: 20px;
                 }
                 body {
-                    background: url('/JavaScript_Projects/assets/images/Desktop - 1 (4).png') no-repeat center center fixed;
+                    background: url('/assets/images/Desktop - 1 (4).png') no-repeat center center fixed;
                     background-size: cover;
                 }
                 .container {
